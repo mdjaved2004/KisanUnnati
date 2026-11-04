@@ -1,0 +1,134 @@
+@charset "ISO-8859-1";
+/*admin.jsp and control_paper.jsp  */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table td {
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.admin-table td:first-child {
+  width: 10%;
+}
+
+.admin-table td:nth-child(2) {
+  width: 5%;
+  text-align: center;
+}
+
+.admin-table td:last-child {
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .admin_list {
+	width: 100%;
+	display:block;
+	margin-bottom: 12px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.admin_list .span {
+	width: 60%;
+	padding: 0 0 0 5px;
+}
+
+.admin_list a {
+	width: 40%;
+} */
+.btn, .btn_denger {
+	width: 9rem;
+	padding: 5px 9px 5px;
+	margin: 0 0 0 0;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	cursor:pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.btn {
+	background-color: #28A745;
+}
+
+.btn_denger {
+	background-color: #ff8080;
+}
+
+.btn:hover {
+	background-color: #0000ff;
+}
+
+.btn_denger:hover {
+	background-color: #ff0000;
+}
+
+.message_error {
+	color: red;
+	font-size: 20px;
+}
+
+.message {
+	color: green;
+	font-size: 20px;
+}
+
+
+
+/*
+
+
+
+
+
+@media ( max-width :980px) {
+	.admin_list .span {
+		width: 45%;
+	}
+	.admin_list a {
+		width: 55%;
+	}
+	.btn, .btn_denger {
+		width: 40%;
+	}
+}
+
+@media ( max-width :620px) {
+	.btn, .btn_denger {
+		width: 60%;
+	}
+}
+
+@media ( max-width :460px) {
+	.admin_list .span {
+		width: 60%;
+	}
+	.admin_list a {
+		width: 40%;
+	}
+	.btn, .btn_denger {
+		width: 90%;
+	}
+} */

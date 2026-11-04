@@ -1,0 +1,170 @@
+/* --- Farmer Feedback Section --- */
+.farmer-feedback-section {
+    padding: 6rem 0;
+    background-color: #f4f4f7; /* A light, clean background */
+    overflow: hidden;
+}
+
+.feedback-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.feedback-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.feedback-header p {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+/* --- Carousel Wrapper & Core --- */
+.feedback-carousel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Set a fixed height for the carousel area */
+}
+
+.feedback-carousel {
+    position: relative;
+    width: 350px; /* Width of the central card */
+    height: 100%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+/* --- Feedback Card Styling & Animation --- */
+.feedback-card {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease, opacity 0.6s ease, z-index 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card States */
+.feedback-card.active {
+    transform: translateX(0) translateZ(0) scale(1.1);
+    opacity: 1;
+    z-index: 10;
+}
+
+.feedback-card.prev {
+    transform: translateX(-60%) translateZ(-200px) rotateY(45deg) scale(0.85);
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.feedback-card.next {
+    transform: translateX(60%) translateZ(-200px) rotateY(-45deg) scale(0.85);
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.feedback-card.inactive {
+    transform: translateX(0) translateZ(-400px) scale(0.7);
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Card Content */
+.feedback-text {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+.farmer-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.farmer-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-green);
+}
+
+.farmer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmer-name {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.farmer-location {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* --- Carousel Navigation --- */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 20;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-nav:hover {
+    background-color: var(--primary-green);
+    color: #fff;
+    border-color: var(--primary-green);
+}
+
+.prev-btn {
+    left: 15%;
+}
+
+.next-btn {
+    right: 15%;
+}
+
+.nav-arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .prev-btn {
+        left: 5%;
+    }
+    .next-btn {
+        right: 5%;
+    }
+    .feedback-carousel {
+        width: 80%;
+    }
+}

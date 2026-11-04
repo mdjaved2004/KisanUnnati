@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* --- Search bar (at top) --- */
+.search-bar {
+  width: 100%;
+  padding: 15px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.search-bar input {
+  width: 50%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background: #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* --- Navbar (below search bar) --- */
+.navbar {
+  width: 100%;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 70px;  /* push below search bar */
+  left: 0;
+  z-index: 15;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: navy;
+  text-decoration: none;
+}
+
+/* Center links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-links li a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Right login/register */
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* --- Hero Section (slideshow background) --- */
+.hero {
+  position: relative;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: darkblue;
+  margin-bottom: 20px;
+  /* margin-top: -20rem; */
+}
+
+.buttons {
+  /* margin-bottom: 40px; */
+  margin-top: 10rem;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: blue;
+  font-size: 14px;
+}
+
+.btn:nth-child(2) {
+  background: white;
+}
+
+.btn:nth-child(3) {
+  background: white;
+}
+
+/* --- Scroll text animation --- */
+.scroll-text {
+  font-size: 18px;
+  font-weight: bold;
+  animation: bounce 2s infinite;
+  margin-top: 25rem;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	width: 100vw;
+	height:100vh;
+	background: radial-gradient(1200px 600px at 10% 10%, rgba(34, 211, 238, 0.12), transparent 60%),
+              radial-gradient(900px 500px at 90% 20%, rgba(56, 189, 248, 0.12), transparent 60%), #0f172a;
+    color: #e5e7eb;      
+   	display: grid;
+  	place-items: center;
+}
+
+#main {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 20px;
+  padding: 2rem 3rem 4rem 2rem;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6), inset 0 1px 0 rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+}
+
+#logo {
+  display: grid;
+  place-items: center;
+  width: 70px; height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #38bdf8, #22d3ee);
+  margin:0 auto 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #0b1220;
+}
+
+h1 {
+	margin: 8px 0 16px;
+	font-size: 1.5rem;
+ 	text-align: center;
+}
+.sub {
+	margin: 0 0 22px;
+	color: #94a3b8;
+	text-align: center;
+	font-size: 0.95rem;
+}
+
+form { 
+	display: grid;
+	gap: 14px;
+}
+
+label {
+	font-size: 0.9rem;
+	color: #cbd5e1;
+	margin-bottom: 6px; 
+	display: block; 
+}
+
+.field {
+	display: grid; gap: 6px; }
+
+.input {
+  width: 100%;
+  font-size:1.01rem;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: #0b1220;
+  color: #e5e7eb;
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.05s ease-in-out;
+}
+.input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 5px rgba(56, 189, 248, 0.45);
+}
+.btn {
+  width: 100%;
+  margin-top:50px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  /* background: linear-gradient(135deg, #15803d, #166534); */
+  background-color: #0000ff;
+  color: #0b1220;
+  font-size:1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: transform 0.06s ease-in-out, filter 0.2s;
+}
+.btn:hover {
+	background-color: #28a745;
+	filter: brightness(1.05);
+}
+.btn:active {
+	transform: translateY(5px); 
+}

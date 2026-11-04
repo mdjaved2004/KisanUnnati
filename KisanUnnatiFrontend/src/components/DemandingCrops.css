@@ -1,0 +1,142 @@
+/* --- Demanding Crops Section --- */
+.demanding-crops-section {
+    padding: 6rem;
+    background-color: #1a202c; /* A dark, elegant background */
+    color: #e2e8f0;
+}
+
+.demanding-crops-section .section-header {
+    text-align: center;
+    margin: 4rem;
+}
+
+.demanding-crops-section .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.demanding-crops-section .section-header p {
+    font-size: 1.125rem;
+    color: #a0aec0;
+    margin-top: 0.5rem;
+}
+
+.demanding-crops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.demand-card {
+    background-color: #2d3748; /* Dark card background */
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid #4a5568;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.demand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+}
+
+.demand-card-image-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.demand-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.demand-card:hover .demand-card-image {
+    transform: scale(1.05);
+}
+
+.demand-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.demand-card-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.demand-crop-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.demand-reason-badge {
+    background-color: #38a169; /* A vibrant green */
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+}
+
+.demand-crop-regions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #a0aec0;
+    margin-bottom: 1.5rem;
+}
+
+.demand-crop-regions .info-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.demand-trend-visual {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #68d391; /* A light green for the trend */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.trend-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.demand-card-actions {
+    margin-top: auto;
+}
+
+.btn-analytics {
+    width: 100%;
+    background-color: #4a5568;
+    color: #e2e8f0;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-analytics:hover {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+}

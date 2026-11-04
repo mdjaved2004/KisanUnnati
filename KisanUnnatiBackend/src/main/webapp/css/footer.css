@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+
+#footer {
+	position: absolute;
+	width: calc(100vw - 16.0.5rem);
+	left:15rem;
+	display: block;
+	margin-top: auto;
+	padding-bottom: 1rem;
+	background-color: #324a61;
+	color: white;
+	word-wrap: break-word;
+	text-align: left;
+	height: auto;
+}
+
+.information-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width:100%;
+  margin:0;
+}
+  
+.information-container  div {
+  flex: 1 1 20%;
+  margin: 20px;
+} 
+.information-links{
+margin-right:0;
+}
+.information-about{
+	margin-left:0;
+}
+.information-about p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.information-contact p {
+  margin: 6px 0;
+}
+
+.information-social a {
+  margin:20px 10px 0 0;
+}
+
+.information-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+.information-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.information-links li {
+  margin-bottom: 10px;
+}
+
+.information-links a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.information-links a:hover {
+  text-decoration: underline;
+  color: #00bfff;
+}
+.information h3, .information h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+a{
+	color: white;
+}
+.topicInfo{
+	font-size: 1.2rem;
+	color:white;
+	font-weight: bold;
+}
+#webnamef {
+  color: white;
+  font-size: 1.2rem;
+}
+#Krashif {
+	color:#01ff01;
+}
+
+@media (max-width: 980px) {
+    #footer {
+		width:100%;
+		left:0;
+	  }
+ }
