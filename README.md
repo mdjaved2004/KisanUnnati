@@ -111,16 +111,6 @@ npm run dev
 
 ---
 
-## 🎯 Expected Outcomes
-
-- Improved direct market access for farmers.
-- Better farming decisions using weather and market information.
-- Support for crop disease identification.
-- Improved access to agricultural information and services.
-- Promoting digital inclusion in rural areas.
-
----
-
 ## 🔮 Future Scope
 
 - Mobile application development for wider accessibility.
